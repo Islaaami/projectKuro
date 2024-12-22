@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuro Bot</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/media/Kuro_bot.png" alt="logo">
+      <h1>Kuro Bot</h1>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-button" onclick="toggleDropdown()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+      <div class="dropdown-content">
+        <a href="https://buymeacoffee.com/devquantum" target="_blank" class="external-link"><i class="fa-solid fa-heart"></i>Donate</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=devquantumstudio@gmail.com&su=Report&body=Please%20write%20your%20report%20here." target="_blank" class="external-link"><i class="fa-solid fa-message"></i>Report</a>
+        <a href="https://x.com/DevQuantumSt?t=JXNh6hc7y5ZlgjCj5XeZRg&s=09" target="_blank" class="external-link"><i class="fa-solid fa-circle-info"></i>About</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav-item" id="tab1" onclick="showIframe('iframe1')">
+        <img src="assets/media/pgr.png" alt="Tab 1">
+      </div>
+      <div class="nav-item" id="tab2" onclick="showIframe('iframe2')">
+        <img src="assets/media/wuwa.png" style="border-radius: 10px;" alt="Tab 2">
+      </div>
+    </nav>
+
+    <div class="iframe-container">
+      <iframe id="iframe1" class="iframe-content" src="iframe1.html"></iframe>
+      <iframe id="iframe2" class="iframe-content hidden" src="iframe2.html"></iframe>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/4130f45c5c.js" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <!-- © Copyright DevQuantum Studio - All Rights Reserved -->
+</body>
+</html>

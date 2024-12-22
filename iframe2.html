@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WUWA</title>
+  <style>
+    body {
+      background: rgb(201,172,103);
+      background: linear-gradient(90deg, rgba(201,172,103,1) 0%, rgba(229,214,181,1) 50%, rgba(201,172,103,1) 100%);
+      color: black;
+      font-size: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: monospace;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .cursor{
+      position: relative;
+      width: 24em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 30px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+    }
+
+    .typewriter-animation {
+      animation: 
+        typewriter 3s steps(50) 1s 1 normal both, 
+        blinkingCursor 500ms steps(50) infinite normal;
+    }
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blinkingCursor{
+      from { border-right-color: rgba(255,255,255,.75); }
+      to { border-right-color: transparent; }
+    }
+
+    video {
+      width: 90%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+    }
+    @media screen and (max-height: 940px) {
+      video {
+      width: auto;
+      max-width: 600px;
+      height: 80%;
+      border-radius: 10px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+      video {
+      width: 90%;
+      max-width: 600px;
+      height: 80%;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <div>
+    <h1 class="cursor typewriter-animation">Coming soon</h1>
+  </div>
+  <video src="assets/media/soon.mp4" autoplay loop muted></video>
+  <!-- © Copyright DevQuantum Studio - All Rights Reserved -->
+</body>
+</html>
