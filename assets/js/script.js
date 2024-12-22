@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.onload = function() {
-  // Wait for 2 seconds, then scroll to top and disable scroll
+  // Wait for 3 seconds, then scroll to top and disable scroll
   setTimeout(function() {
     // Scroll to the top of the page
     window.scrollTo(0, 0);
-  }, 2500);  // 2500ms = 2 seconds
+  }, 3000);  // 3000ms = 3 seconds
 };
 
     // Function to toggle dropdown visibility
