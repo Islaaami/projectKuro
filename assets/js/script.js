@@ -25,6 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
   showIframe('iframe1');
 });
 
+window.onload = function() {
+  // Wait for 2 seconds, then scroll to top and disable scroll
+  setTimeout(function() {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+  }, 2500);  // 2500ms = 2 seconds
+};
 
     // Function to toggle dropdown visibility
     function toggleDropdown() {
