@@ -25,17 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   showIframe('iframe1');
 });
 
-window.onload = function() {
-  // Wait for 3 seconds, then scroll to top and disable scroll
-  setTimeout(function() {
-    // Scroll to the top of the page
-    window.scrollTo(0, 0);
-
-    // Disable scrolling by setting the overflow properties to hidden
-    document.body.style.overflow = 'hidden';  // Disable scroll on the body element
-    document.documentElement.style.overflow = 'hidden';  // Disable scroll on the root element (html)
-  }, 3000);  // 3000ms = 3 seconds
-};
 
     // Function to toggle dropdown visibility
     function toggleDropdown() {
